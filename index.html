@@ -10,6 +10,8 @@
 
 <title>Lumina Fotografia</title>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>    
+
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
@@ -20,11 +22,55 @@
 
 <img src="img/lumina.png" alt="Lumina Fotografia">
 
+</header>
+
+<!-- GALERIA -->
+<div class="swiper">
+  
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img src="img/img1.png">
+    </div>
+
+    <div class="swiper-slide">
+      <img src="img/img2.png">
+    </div>
+
+    <div class="swiper-slide">
+      <img src="img/img3.png">
+    </div>
+
+    <div class="swiper-slide">
+      <img src="img/img4.png">
+    </div>
+
+  </div>
+
+</div>
 <a href="https://wa.me/5514996473255" class="whatsapp-button" target="_blank">
 <img src="img/whatsapp.png" alt="WhatsApp">
 </a>
+<!--SCRIPT DO SWIPPER -->
+<script type="module">
 
-</header>
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
 
+const swiper = new Swiper('.swiper', {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 20,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+});
+
+</script>
+<!--SCRIPT DO SWIPPERE -->
 </body>
 </html>
