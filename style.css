@@ -1,31 +1,37 @@
     body{
         margin:0;
         font-family: Montserrat, sans-serif;
-        background:#f5f5f5;
+        min-height:100vh;
+        background: linear-gradient(135deg, #31302f, #31302f 40%, #d9bf30);
     }
 
     /* topo do site */
-    header{
-background: linear-gradient(135deg, #31302f, #31302f 40%, #d9bf30);
+        header{
 color:#d9bf30;
 padding:20px;
 
 display:flex;
-justify-content:space-between;
+justify-content:space-between;  
 align-items:center;
 }
 
-    /* imagem do topo */
+/* imagem do topo */
     header img{
         width: 100px;
         border-radius:8px;
     }
 /*WHATS*/
-   .whatsapp-button{
-background:#d9bf30;
-padding:10px;
-border-radius:50%;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
+.whatsapp-button{
+    position: fixed;   /* fixa na tela */
+    bottom: 20px;      /* distância da parte de baixo */
+    right: 20px;       /* distância da direita */
+
+    background:#d9bf30;
+    padding:10px;
+    border-radius:50%;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+
+    z-index:1000;      /* fica acima de tudo */
 }
 
 .whatsapp-button img{
