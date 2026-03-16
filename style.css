@@ -92,3 +92,26 @@ transition:0.3s;
     transform: translateX(-50%) scale(1.05);
     transition:0.3s;
 }
+/*botao sobre*/
+.botao-sobre{
+    position:absolute;
+    top:50px;
+    right:20px;
+
+    background:#d9bf30;
+    color:#31302f;
+
+    padding:10px 25px;
+    border-radius:30px;
+
+    font-weight:bold;
+    text-decoration:none;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
+    transition:0.3s;
+}
+
+.botao-sobre:hover{
+    transform:scale(1.05);
+}
