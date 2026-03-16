@@ -48,28 +48,40 @@
   </div>
 
 </div>
+<!--BOTAO ZAP-->
 <a href="https://wa.me/5514996473255" class="whatsapp-button" target="_blank">
 <img src="img/whatsapp.png" alt="WhatsApp">
 </a>
+<!--saiba mais-->
+<a href="#mais" class="botao-saiba-mais">Saiba mais</a>
+
 <!--SCRIPT DO SWIPPER -->
 <script type="module">
 
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
 
 const swiper = new Swiper('.swiper', {
+
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 20,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-  },
-});
+  loop: true,
 
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  coverflowEffect: {
+    rotate: 30,
+    stretch: 0,
+    depth: 200,
+    modifier: 1,
+    slideShadows: false,
+  },
+
+});
 </script>
 <!--SCRIPT DO SWIPPERE -->
 </body>
