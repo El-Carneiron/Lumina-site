@@ -8,6 +8,9 @@
     font-family: Montserrat, sans-serif;
     background: linear-gradient(135deg, #31302f, #31302f 40%, #d9bf30);
 }
+html{
+scroll-behavior: smooth;
+}
 
     /* topo do site */
         header{
@@ -114,4 +117,50 @@ transition:0.3s;
 
 .botao-sobre:hover{
     transform:scale(1.05);
+}
+
+/*botao tabela*/
+/* BOTÕES PARA TROCAR TABELA */
+.botoes-tabela{
+    margin-bottom:20px;
+}
+
+.botoes-tabela button{
+    background:#d9bf30;
+    border:none;
+    padding:10px 20px;
+    margin:5px;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* ESCONDER TABELAS */
+.tabela{
+    display:none;
+}
+
+/* TABELA */
+table{
+    width:80%;
+    margin:30px auto;
+    border-collapse:collapse;
+}
+
+/* CÉLULAS */
+th, td{
+    border:1px solid #d9bf30;
+    padding:12px;
+    text-align:center;
+}
+
+/* CABEÇALHO */
+th{
+    background:#31302f;
+    color:#d9bf30;
+}
+
+/* LINHAS ALTERNADAS */
+tr:nth-child(even){
+    background:#f5f5f5;
 }
