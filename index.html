@@ -63,209 +63,179 @@
 <h2>Tabela de Orçamento</h2>
 <!--botoes da tabela-->
 <div class="botoes-tabela">
-    <button onclick="mostrarTabela('tabela1')">Ensaios</button>
-    <button onclick="mostrarTabela('tabela2')">Eventos</button>
-  
-</div>
-<!--ensaios-->
-<div id="tabela1" class="tabela">
-<table>
-
-<tr>
-<th>Pacote</th>
-<th>Fotos</th>
-<th>Duração</th>
-<th>Local</th>
-<th>Roupas</th>
-<th>Preço</th>
-</tr>
-
-<tr>
-<td>Pacote 1</td>
-<td>Todas as fotos digitais</td>
-<td>3h30 de ensaio</td>
-<td>1 lugar</td>
-<td>Ilimitadas</td>
-<td>R$ 450</td>
-</tr>
-
-<tr>
-<td>Pacote 2</td>
-<td>60 fotos digitais</td>
-<td>2h30 de ensaio</td>
-<td>1 lugar</td>
-<td>3 roupas</td>
-<td>R$ 350</td>
-</tr>
-
-<tr>
-<td>Pacote 3</td>
-<td>40 fotos digitais</td>
-<td>1h30 de ensaio</td>
-<td>1 lugar</td>
-<td>2 roupas</td>
-<td>R$ 250</td>
-</tr>
-
-<tr>
-<td>Pacote 4</td>
-<td>20 fotos digitais</td>
-<td>1h de ensaio</td>
-<td>1 lugar</td>
-<td>1 roupa</td>
-<td>R$ 150</td>
-<tr>
-
-<td>Pacote Foto a Foto</td>
-<td>fotos ilimitadas escolha a que quiser</td>
-<td>1h de ensaio</td>
-<td>1 lugar</td>
-<td>1 roupa</td>
-<td>R$ 10 por foto digital</td>
-</tr>
-</tr>
-
-</table>
-<table border="1" cellpadding="10" cellspacing="0">
-    <tr>
-        <th>Item</th>
-        <th>Preço</th>
-    </tr>
-
-    <tr>
-        <td>+1h de ensaio</td>
-        <td>R$ 100,00</td>
-    </tr>
-
-    <tr>
-        <td>+1 lugar</td>
-        <td>R$ 100,00</td>
-    </tr>
-
-    <tr>
-        <td>Maquiagem</td>
-        <td>R$ 100,00</td>
-    </tr>
-
-    <tr>
-        <td>Foto avulsa revelada</td>
-        <td>R$ 10,00</td>
-    </tr>
-
-    <tr>
-        <td>Álbum personalizado com 20 fotos</td>
-        <td>R$ 400,00</td>
-    </tr>
-
-    <tr>
-        <td>Tela canvas</td>
-        <td>R$ 400,00</td>
-    </tr>
-</table>
-</div>
-<!--eventos-->
-<div id="tabela2" class="tabela">
-<table>
-
-<tr>
-<th>Pacote</th>
-<th>Fotos</th>
-<th>Tempo</th>
-<th>Preço</th>
-</tr>
-
-<tr>
-<td>Pacote 1</td>
-<td>Todas as fotos digitais</td>
-<td>Todo o evento</td>
-<td>R$ 460</td>
-</tr>
-
-<tr>
-<td>Pacote 2</td>
-<td>60 fotos digitais</td>
-<td>4h de evento</td>
-<td>R$ 300</td>
-</tr>
-
-<tr>
-<td>Pacote 3</td>
-<td>40 fotos digitais</td>
-<td>4h de evento</td>
-<td>R$ 200</td>
-</tr>
-
-<tr>
-<td>Pacote 4</td>
-<td>20 fotos digitais</td>
-<td>4h de evento</td>
-<td>R$ 150</td>
-</tr>   
-
-</table>
-
-<table border="1" cellpadding="10" cellspacing="0">
-    <tr>
-        <th>Item</th>
-        <th>Preço</th>
-    </tr>
-
-    <tr>
-        <td>Fotos extras (1 a 4)</td>
-        <td>R$ 10 cada</td>
-    </tr>
-
-    <tr>
-        <td>Foto avulsa revelada</td>
-        <td>R$ 10,00</td>
-    </tr>
-
-    <tr>
-        <td>Álbum personalizado com 20 fotos</td>
-        <td>R$ 400,00</td>
-    </tr>
-
-    <tr>
-        <td>Tela canvas</td>
-        <td>R$ 400,00</td>
-    </tr>
-
-    <tr>
-        <td>Todo o evento (escolha e pague apenas pelas fotos que gostar)</td>
-        <td>R$ 10,00 por foto</td>
-    </tr>
-</table>
-<div id="tabela3" class="tabela">
-<table>
-<tr>
-<th>Serviço</th>
-<th>Preço</th>
-</tr>
-<tr>
-<td>Site completo</td>
-<td>R$ 1200</td>
-</tr>
-</table>
+    <button onclick="mostrarTabela('ensaios')">Ensaios</button>
+    <button onclick="mostrarTabela('eventos')">Eventos</button>
 </div>
 
+<!-- ENSAIOS -->
+<div id="ensaios" class="grupo-cards">
+    <!-- COLE AQUI os cards do tabela1 -->
+     <div class="cards">
+
+    <!-- PACOTES -->
+    <div class="card">
+        <h2>Pacote 1</h2>
+        <p><strong>Fotos:</strong> Todas as fotos digitais</p>
+        <p><strong>Duração:</strong> 3h30 de ensaio</p>
+        <p><strong>Local:</strong> 1 lugar</p>
+        <p><strong>Roupas:</strong> Ilimitadas</p>
+        <span class="preco">R$ 450</span>
+    </div>
+
+    <div class="card">
+        <h2>Pacote 2</h2>
+        <p><strong>Fotos:</strong> 60 fotos digitais</p>
+        <p><strong>Duração:</strong> 2h30 de ensaio</p>
+        <p><strong>Local:</strong> 1 lugar</p>
+        <p><strong>Roupas:</strong> 3 roupas</p>
+        <span class="preco">R$ 350</span>
+    </div>
+
+    <div class="card">
+        <h2>Pacote 3</h2>
+        <p><strong>Fotos:</strong> 40 fotos digitais</p>
+        <p><strong>Duração:</strong> 1h30 de ensaio</p>
+        <p><strong>Local:</strong> 1 lugar</p>
+        <p><strong>Roupas:</strong> 2 roupas</p>
+        <span class="preco">R$ 250</span>
+    </div>
+
+    <div class="card">
+        <h2>Pacote 4</h2>
+        <p><strong>Fotos:</strong> 20 fotos digitais</p>
+        <p><strong>Duração:</strong> 1h de ensaio</p>
+        <p><strong>Local:</strong> 1 lugar</p>
+        <p><strong>Roupas:</strong> 1 roupa</p>
+        <span class="preco">R$ 150</span>
+    </div>
+
+    <div class="card destaque">
+        <h2>Foto a Foto</h2>
+        <p><strong>Fotos:</strong> Escolha apenas as que quiser</p>
+        <p><strong>Duração:</strong> 1h de ensaio</p>
+        <p><strong>Local:</strong> 1 lugar</p>
+        <p><strong>Roupas:</strong> 1 roupa</p>
+        <span class="preco">R$ 10 por foto</span>
+    </div>
+
 </div>
-<!--SCRIPT DO tabela -->
+
+
+<!-- EXTRAS -->
+<h2 class="titulo">Extras</h2>
+
+<div class="cards">
+
+    <div class="card pequeno">
+        <p>+1h de ensaio</p>
+        <span class="preco">R$ 100,00</span>
+    </div>
+
+    <div class="card pequeno">
+        <p>+1 lugar</p>
+        <span class="preco">R$ 100,00</span>
+    </div>
+
+    <div class="card pequeno">
+        <p>Maquiagem</p>
+        <span class="preco">R$ 100,00</span>
+    </div>
+
+    <div class="card pequeno">
+        <p>Foto avulsa revelada</p>
+        <span class="preco">R$ 10,00</span>
+    </div>
+
+    <div class="card pequeno">
+        <p>Álbum (20 fotos)</p>
+        <span class="preco">R$ 400,00</span>
+    </div>
+
+    <div class="card pequeno">
+        <p>Tela canvas</p>
+        <span class="preco">R$ 400,00</span>
+    </div>
+
+</div>
+</div>
+
+<!-- EVENTOS -->
+<div id="eventos" class="grupo-cards" style="display: none;">
+    <!-- COLE AQUI os cards do tabela2 -->
+     <div class="cards">
+
+    <!-- PACOTES EVENTO -->
+    <div class="card">
+        <h2>Pacote 1</h2>
+        <p><strong>Fotos:</strong> Todas as fotos digitais</p>
+        <p><strong>Tempo:</strong> Todo o evento</p>
+        <span class="preco">R$ 460</span>
+    </div>
+
+    <div class="card">
+        <h2>Pacote 2</h2>
+        <p><strong>Fotos:</strong> 60 fotos digitais</p>
+        <p><strong>Tempo:</strong> 4h de evento</p>
+        <span class="preco">R$ 300</span>
+    </div>
+
+    <div class="card">
+        <h2>Pacote 3</h2>
+        <p><strong>Fotos:</strong> 40 fotos digitais</p>
+        <p><strong>Tempo:</strong> 4h de evento</p>
+        <span class="preco">R$ 200</span>
+    </div>
+
+    <div class="card">
+        <h2>Pacote 4</h2>
+        <p><strong>Fotos:</strong> 20 fotos digitais</p>
+        <p><strong>Tempo:</strong> 4h de evento</p>
+        <span class="preco">R$ 150</span>
+    </div>
+
+</div>
+
+
+<!-- EXTRAS -->
+<h2 class="titulo">Extras</h2>
+
+<div class="cards">
+
+    <div class="card pequeno">
+        <p>Fotos extras (1 a 4)</p>
+        <span class="preco">R$ 10 cada</span>
+    </div>
+
+    <div class="card pequeno">
+        <p>Foto avulsa revelada</p>
+        <span class="preco">R$ 10,00</span>
+    </div>
+
+    <div class="card pequeno">
+        <p>Álbum (20 fotos)</p>
+        <span class="preco">R$ 400,00</span>
+    </div>
+
+    <div class="card pequeno">
+        <p>Tela canvas</p>
+        <span class="preco">R$ 400,00</span>
+    </div>
+
+    <div class="card destaque">
+        <p>Todo o evento</p>
+        <span class="preco">R$ 10 por foto</span>
+    </div>
+
+</div>
+</div>>
+<!--SCRIPT Da tabela -->
 <script>
+function mostrarTabela(tipo) {
+    document.getElementById('ensaios').style.display = 'none';
+    document.getElementById('eventos').style.display = 'none';
 
-function mostrarTabela(id){
-
-let tabelas = document.querySelectorAll(".tabela");
-
-tabelas.forEach(tabela =>{
-tabela.style.display = "none";
-});
-
-document.getElementById(id).style.display = "block";
-
+    document.getElementById(tipo).style.display = 'block';
 }
-
-mostrarTabela("tabela1");
-
 </script>
 
 <!--SCRIPT DO SWIPPER -->
