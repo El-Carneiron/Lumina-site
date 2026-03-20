@@ -53,22 +53,32 @@ transition:0.3s;
 }
 
 /*CARROSSEL*/
-.swiper{
-    width:100%;
-    padding:60px 0;
+.swiper {
+    width: 100vw;
+    height: 80vh;
+    margin-left: calc(-50vw + 50%);
+    background:transparent;
 }
 
-.swiper-slide{
-    width:300px;
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.swiper-slide img{
-    width:100%;
-    border-radius:15px;
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.swiper-slide img {
+    object-fit: cover;
+}
 
-    box-shadow:0 10px 30px rgba(0,0,0,0.4);
-
-    transition:0.3s;
+@media (max-width: 600px) {
+    .swiper-slide img {
+        object-fit: contain;
+    }
 }
 /*botao saiba mais*/
 .botao-saiba-mais{
@@ -144,8 +154,6 @@ transition:0.3s;
     color: #000;
 }
 
-/*coisas novas///////////////////////////////////////////////*/
-
 
 /* grid */
 .cards {
@@ -158,31 +166,38 @@ transition:0.3s;
 
 /* card */
 .card {
-    background: #fff;
+    background: #1a1a1a; /* escuro elegante */
+    color: #fff;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid rgba(217,191,48,0.2);
+
     transition: 0.3s;
-      z-index:1001;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
 }
 
 /* título */
 .card h2 {
-    margin-top: 0;
-    color: #333;
+    color: #d9bf30;
+    text-align: center;
+    margin-bottom: 10px;
+}   
+.card p {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 5px 0;
 }
-
 /* preço */
 .preco {
-    display: block;
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
     color: #d9bf30;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* destaque */
@@ -195,9 +210,20 @@ transition:0.3s;
     text-align: center;
 }
 
-/* título extras */
 .titulo {
     text-align: center;
+    font-size: 32px;
+    color: #d9bf30;
     margin: 40px 0 20px;
-    font-size: 28px;
+    position: relative;
+}
+
+/* linha decorativa */
+.titulo::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #d9bf30;
+    margin: 10px auto 0;
 }
